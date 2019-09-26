@@ -21,4 +21,8 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('/bienvenida', 'SitioController@bienvenida')->name('bienvenida');
 
-Route::get('/contacto', 'SitioController@contacto')->name('contacto');
+Route::get('contacto', 'SitioController@contacto')->name('contacto');
+
+Route::post('contacto-guardar', 'SitioController@guardaContacto')->name('guardar');
+
+Route::get('ver-mensajes', 'SitioController@verMensajes')->name('ver-mensajes');
